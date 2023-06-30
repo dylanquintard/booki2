@@ -15,7 +15,27 @@
 
 body {
     display: flex;
+
     justify-content: center;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    padding: 30px;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+    text-align: center;
+} 
+
+a:hover {
+    border-top: 2px #0065FC solid;
+    color: #0065FC;
 }
 
 .main-container {
