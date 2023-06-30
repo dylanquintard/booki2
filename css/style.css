@@ -15,15 +15,22 @@
 
 body {
     display: flex;
-    padding: 20px;
     justify-content: center;
 }
 
 .header {
     display: grid;
     grid-template-columns: 70% 15% 15%;
-    padding: 20px;
-    gap: 10px;
+    padding: 10px;
+}
+
+.topPage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px; 
+    align-self: stretch; 
+    margin-top: 10px;
 }
 
 a {
@@ -38,6 +45,10 @@ a:hover {
     color: #0065FC;
 }
 
+h2 {
+    margin-bottom: -40px;
+}
+
 .search {
     display: flex;
     width: 377px;
@@ -47,7 +58,6 @@ a:hover {
     border-radius: 15px;
     border: 1px solid var(--grey, #F2F2F2);
     background: var(--white, #FFF); 
-    padding: 20px;
 }
 
 .searchButton {
@@ -66,9 +76,51 @@ a:hover {
     width: 100%;
     border: none;
     border-right: none;
-    padding: 5px;
     outline: none;
   }
+
+.Filters {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    gap: 15px; 
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.filtersButton {
+    display: flex;
+    height: 50px;
+    padding: 4px 19px;
+    align-items: center;
+    gap: 10px; 
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 25px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+    background-color: white;
+}
+
+.filtersButton:hover {
+    background-color: #DEEBFF;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.infoButton {
+    display:inline-block;
+    border: 1px solid var(--grey-tint-2, #D9D9D9);
+    margin:2px;
+    font-size:12px;
+    width:24px;
+    height:24px;
+    border-radius: 50%;
+    background-color: white;
+}
 
 .main-container {
     width: 100%;
