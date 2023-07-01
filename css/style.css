@@ -373,7 +373,7 @@ footer {
 
 .navfooter {
     display: flex;
-    margin-right: 200px;
+    margin-right: 250px;
 }
 
 .navfooter a {
@@ -385,6 +385,10 @@ footer {
 
 .navfooter li {
     list-style-type: none;
+}
+
+.navfooter ul {
+    padding-left: 0;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
