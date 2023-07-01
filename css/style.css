@@ -16,12 +16,34 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 30px;
 }
 
 .header {
-    display: grid;
-    grid-template-columns: 70% 15% 15%;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+} 
+
+.header a:hover {
+    border-top: 2px var(--main-color) solid;
+    color: #0065FC;
+}
+
+.header img {
+    display: flex;
 }
 
 .topPage {
@@ -32,18 +54,6 @@ body {
     align-self: stretch; 
     margin-top: 10px;
     margin-bottom: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    padding-top: 10px;
-    text-align: center;
-} 
-
-a:hover {
-    border-top: 2px #0065FC solid;
-    color: #0065FC;
 }
 
 h2 {
@@ -61,6 +71,13 @@ h2 {
     background: var(--white, #FFF); 
 }
 
+
+.searchLogo {
+    background-color: var(--grey, #F2F2F2);
+    padding: 15px 20px;
+    border-radius: 15px 0px 0px 15px;
+}
+
 .searchButton {
     display: flex;
     height: 49px;
@@ -68,8 +85,8 @@ h2 {
     align-items: center;
     gap: 10px; 
     border-radius: 0px 15px 15px 0px;
-    border: 1px solid var(--blue, #0065FC);
-    background: var(--blue, #0065FC);
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
     color: white;
 }
 
