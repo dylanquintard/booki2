@@ -68,7 +68,7 @@ body {
     gap: 24px; 
     border-radius: 15px;
     border: 1px solid var(--grey, #F2F2F2);
-    background: var(--white, #FFF); 
+    background: var(--white, #FFF);
 }
 
 
@@ -97,13 +97,13 @@ body {
     outline: none;
   }
 
-.Filters {
+  .Filters {
     display: flex;
-    height: 50px;
     align-items: center;
     gap: 15px; 
     font-weight: bold;
     font-size: 18px;
+    flex-wrap: wrap;
 }
 
 .filtersButton {
@@ -125,11 +125,11 @@ body {
 
 .infos {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-.infoButton {
+.infos .infoButton {
     display:inline-block;
     border: 1px solid var(--grey-tint-2, #D9D9D9);
     margin:2px;
@@ -138,6 +138,13 @@ body {
     height:24px;
     border-radius: 50%;
     background-color: white;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.infos p {
+    display: flex;
+    align-items: center;
 }
 
 .main-container {
@@ -369,6 +376,7 @@ footer {
     align-items: flex-start;
     align-self: stretch;
     background: #F2F2F2;
+    flex-wrap: wrap;
 }
 
 .navfooter {
